@@ -11,13 +11,17 @@ loaderVersion="[41,)"
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
 license="All rights reserved"
 # A URL to refer people to when problems occur with this mod
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
+showAsResourcePack=false
+
 [[mods]]
 modId="elements"
 version="1.0.0.0"
 displayName="Minecraft Minero"
-logoFile="examplemod.png"
+updateJSONURL=""
+displayURL=""
+logoFile=""
 credits="Si hay que ser minero, romper con pico en el hierro, no importa creeper que venga pa que sepas que te quiero"
 authors="Carolina Arellano, Yochabel Martinez and Rodrigo Lopez"
 description='''
