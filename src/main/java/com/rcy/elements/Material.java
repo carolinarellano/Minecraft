@@ -1,7 +1,7 @@
 package com.rcy.elements;
 
 //Material -> Enum
-public enum Materials {
+public enum Material {
     LEATHER,
     GOLDEN,
     CHAINMAIL,
