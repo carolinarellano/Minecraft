@@ -1,5 +1,6 @@
 package com.rcy.elements;
 
+
 /*
 Arma
 	Arma (Resistencia, Material, Daño) -> Se llama desde la interfaz
@@ -11,7 +12,7 @@ Arma
 	Save
 	Delete
 	Clone
-	Shuffle
+	Shuffle -> Randomize
 	Edit
  */
 
@@ -25,11 +26,9 @@ public class Armor {
     public Armor(){
     }
 
-    public Armor(Type type, Material material, int resistance, int damage){
+    public Armor(Type type, Material material){
         setType(type);
         setMaterial(material);
-        setResistance(resistance);
-        setDamage(damage);
     }
 
     public Armor(Type type, Material material, int resistance){
@@ -37,12 +36,12 @@ public class Armor {
         setResistance(resistance);
     }
 
-    public Armor(Type type, Material material){
-        this.type = type;
-        this.material = material;
+    public Armor(Type type, Material material, int resistance, int damage){
+        this(type, material, resistance);
+        setDamage(damage);
     }
 
-    
+
     //Setters
     void setResistance(int resistance){
         this.resistance = resistance;
@@ -56,7 +55,9 @@ public class Armor {
         this.damage = damage;
     }
 
-    void setType(Type type) { this.type = type; }
+    void setType(Type type){
+        this.type = type;
+    }
 
     //Getters
 
@@ -77,5 +78,15 @@ public class Armor {
     }
 
     //Functions
+    @Override
+    public Armor clone(){
+        return new Armor(this.type, this.material, this.resistance, this.damage);
+    }
+
+    public void edit(){
+
+    }
+    
+
 }
 
