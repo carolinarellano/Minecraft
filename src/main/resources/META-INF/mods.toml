@@ -29,18 +29,3 @@ description='''
     The main purpose is using the structure of Java to give a tool to the developers of Minecraft Mods to create their armours, weapons and poisons easily!
     Enjoy the final product !!!
 '''
-displayTest = "MATCH_VERSION"
-
-[[dependencies.elements]]
-    modId="forge"
-    mandatory=true
-    versionRange="[41,)"
-    ordering="NONE"
-    side="BOTH"
-
-[[dependencies.elements]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.19,1.20)"
-    ordering="NONE"
-    side="BOTH"
