@@ -1,7 +1,8 @@
 package com.rcy.elements;
 
+import net.minecraft.world.entity.EquipmentSlot;
+import static net.minecraft.world.entity.EquipmentSlot.*;
 import java.io.*;
-
 
 /*
 Arma
@@ -18,9 +19,7 @@ Arma
 	Edit
  */
 
-import net.minecraft.world.entity.EquipmentSlot;
 
-import static net.minecraft.world.entity.EquipmentSlot.*;
 
 //Constructors
 public class Armor {
@@ -29,39 +28,39 @@ public class Armor {
     public int damage = 0;
     public EquipmentSlot.Type type = FEET.getType();
 
-    public Armor(){
+    public Armor() {
     }
 
-    public Armor(EquipmentSlot.Type type, Material material){
+    public Armor(EquipmentSlot.Type type, Material material) {
         setType(type);
         setMaterial(material);
     }
 
-    public Armor(EquipmentSlot.Type type, Material material, int resistance){
+    public Armor(EquipmentSlot.Type type, Material material, int resistance) {
         this(type, material);
         setResistance(resistance);
     }
 
-    public Armor(EquipmentSlot.Type type, Material material, int resistance, int damage){
+    public Armor(EquipmentSlot.Type type, Material material, int resistance, int damage) {
         this(type, material, resistance);
         setDamage(damage);
     }
 
 
     //Setters
-    void setResistance(int resistance){
+    void setResistance(int resistance) {
         this.resistance = resistance;
     }
 
-    void setMaterial(Material material){
+    void setMaterial(Material material) {
         this.material = material;
     }
 
-    void setDamage(int damage){
+    void setDamage(int damage) {
         this.damage = damage;
     }
 
-    void setType(EquipmentSlot.Type type){
+    void setType(EquipmentSlot.Type type) {
         this.type = type;
     }
 
@@ -85,14 +84,14 @@ public class Armor {
 
     //Functions
     @Override
-    public Armor clone(){
+    public Armor clone() {
         return new Armor(this.type, this.material, this.resistance, this.damage);
     }
 
     @Override
     public String toString() {
         String Name = this.material + "_" + this.type;
-        String id = '"' + Name.toLowerCase() + '"' ;
+        String id = '"' + Name.toLowerCase() + '"';
         String a = String.format("""
                 %s = ITEMS.register(%s,
                 \t() -> new ArmorItem(ModArmorMaterials.%s, EquipmentSlot.%s,
@@ -100,7 +99,7 @@ public class Armor {
         return a;
     }
 
-    public void saveArmor(String source, String destination){
+    public void saveArmor(String source, String destination) {
         try {
             // Load the source file into a string
             String sourceCode = readFile(source);
@@ -133,7 +132,4 @@ public class Armor {
         writer.write(this.toString());
         writer.close();
     }
-
-
 }
-

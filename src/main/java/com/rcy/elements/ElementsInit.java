@@ -8,12 +8,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(Init.MODID)
-public class Init {
-    public static final String MODID = "init";
+@Mod(ElementsInit.MODID)
+public class ElementsInit {
+    public static final String MODID = "elements";
     private static final Logger LOGGER =  LogManager.getLogger();
 
-    public Init(){
+    public ElementsInit(){
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
     }

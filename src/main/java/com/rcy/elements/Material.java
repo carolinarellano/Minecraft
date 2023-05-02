@@ -34,6 +34,7 @@ public enum Material implements ArmorMaterial {
         return Ingredient.of(Items.NETHERITE_INGOT);
     });
 
+
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;
     private final int durabilityMultiplier;
