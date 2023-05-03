@@ -1,8 +1,5 @@
-package net.rcy.modbuilder;
-
+package net.rcy.modbuilder.building;
 import net.minecraft.world.entity.EquipmentSlot;
-
-import static net.minecraft.world.entity.EquipmentSlot.*;
 import java.io.*;
 
 
@@ -49,7 +46,7 @@ public class Armor {
 
     public Armor(EquipmentSlot.Type type, Material material, int health, int damage) {
         this(type, material, health);
-        IRON
+
     }
 
 

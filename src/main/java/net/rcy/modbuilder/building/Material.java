@@ -1,4 +1,4 @@
-package net.rcy.modbuilder;
+package net.rcy.modbuilder.building;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
