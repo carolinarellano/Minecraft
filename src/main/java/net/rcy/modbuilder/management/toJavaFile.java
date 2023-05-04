@@ -7,13 +7,7 @@ import java.io.*;
 public class toJavaFile extends Armor {
     @Override
     public String toString() {
-        String Name = this.getMaterial() + "_" + this.getType();
-        String id = '"' + Name.toLowerCase() + '"';
-        String a = String.format("""
-                %s = ITEMS.register(%s,
-                \t() -> new ArmorItem(ModArmorMaterials.%s, EquipmentSlot.%s,
-                          new Item.Properties().tab(ModCreativeModeTab.INITARMOR)));""" + Name, id, this.getMaterial(), this.getType());
-        return a;
+        return super.toString();
     }
 
     public void saveArmor(String source, String destination) {

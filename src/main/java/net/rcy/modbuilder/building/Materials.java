@@ -6,6 +6,5 @@ public enum Materials {
     IRON,
     GOLD,
     DIAMOND,
-    TURTLE,
     NETHERITE
 }
