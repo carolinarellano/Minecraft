@@ -49,8 +49,15 @@ public abstract class Material implements ArmorMaterial{
         return type;
     }
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "Material{" +
+                "name='" + name + '\'' +
+                ", material=" + material +
+                ", durabilityMultiplier=" + durabilityMultiplier +
+                ", toughness=" + toughness +
+                ", knockbackResistance=" + knockbackResistance +
+                ", type=" + type +
+                '}';
+    }
 }
