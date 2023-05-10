@@ -1,9 +1,11 @@
-package net.rcy.modbuilder.building;
+package net.rcy.modbuilder.armor;
 
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.crafting.Ingredient;
 
-public abstract class Material implements ArmorMaterial{
+public abstract class Material implements ArmorMaterial {
 
     //add all the elements non-modified of the material, but define it since the beginning with armor material args
     public final String name;
@@ -21,6 +23,16 @@ public abstract class Material implements ArmorMaterial{
         this.knockbackResistance = knockbackResistance;
         this.type = type;
     }
+
+    public abstract int getDurabilityForSlot(EquipmentSlot type);
+
+    public abstract int getDefenseForSlot(EquipmentSlot type);
+
+    public abstract int getEnchantmentValue();
+
+    public abstract SoundEvent getEquipSound();
+
+    public abstract Ingredient getRepairIngredient();
 
     @Override
     public String getName() {
@@ -44,6 +56,7 @@ public abstract class Material implements ArmorMaterial{
     public float getKnockbackResistance() {
         return knockbackResistance;
     }
+
 
     public EquipmentSlot getType() {
         return type;

@@ -1,4 +1,4 @@
-package net.rcy.modbuilder.building;
+package net.rcy.modbuilder.armor;
 
 public enum Materials {
     LEATHER,
