@@ -14,9 +14,9 @@ public class Armor_Interface extends JFrame {
     private ImageIcon BackgroundIcon;
     private JLabel BackgroundImage;
     JButton backButton = new JButton("\u2190");
-    public enum Material {NIVEL1, NIVEL2, NIVEL3};
+    /*public enum Material {NIVEL1, NIVEL2, NIVEL3};
     private JComboBox<Material> MaterialCmb = new JComboBox(Material.values());
-
+    */
     public enum Durability { NIVEL1, NIVEL2, NIVEL3 };
     private JComboBox<Durability> DurabilityCmb = new JComboBox(Durability.values());
     public enum Tenacity { NIVEL1, NIVEL2, NIVEL3 };
@@ -59,17 +59,17 @@ public class Armor_Interface extends JFrame {
         BackgroundImage = new JLabel(BackgroundIcon);
         BackgroundImage.setBounds(0, 0, 800, 600);
 
-        //Lista despegable material
-        MaterialCmb.setBounds(650,200,50,40);
-        MaterialCmb.setFont(FONT);
+        //Lista despegable material (Por ver)
+        /*MaterialCmb.setBounds(650,200,50,40);
+        MaterialCmb.setFont(FONT);*/
         //Lista despegable durabilidad
-        DurabilityCmb.setBounds(140, 200, 50, 40);
+        DurabilityCmb.setBounds(200, 200, 50, 40);
         DurabilityCmb.setFont(FONT);
         //Lista despegable tenacidad
-        TenacityCmb.setBounds(300, 200, 50, 40);
+        TenacityCmb.setBounds(375, 200, 50, 40);
         TenacityCmb.setFont(FONT);
         //Lista despegable tenacidad
-        ResistenceCmb.setBounds(480, 200, 50, 40);
+        ResistenceCmb.setBounds(550, 200, 50, 40);
         ResistenceCmb.setFont(FONT);
         //Lista despegable casco
         helmetCmb.setBounds(140, 400, 50, 40);
@@ -92,7 +92,7 @@ public class Armor_Interface extends JFrame {
         c.add(pantsCmb);
         c.add(chestCmb);
         c.add(helmetCmb);
-        c.add(MaterialCmb);
+        //c.add(MaterialCmb);
         c.add(ResistenceCmb);
         c.add(TenacityCmb);
         c.add(DurabilityCmb);
