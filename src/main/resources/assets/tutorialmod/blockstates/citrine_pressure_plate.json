@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "modbuilder:block/citrine_pressure_plate" },
+    "powered=true": { "model": "modbuilder:block/citrine_pressure_plate_down" }
+  }
+}

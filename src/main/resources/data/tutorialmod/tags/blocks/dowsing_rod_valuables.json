@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:citrine_ore",
+    "modbuilder:citrine_ore",
     "minecraft:redstone_ore",
     "minecraft:diamond_ore",
     "minecraft:iron_ore",
