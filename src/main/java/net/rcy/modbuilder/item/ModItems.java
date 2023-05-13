@@ -15,10 +15,6 @@ public class ModItems {
     public static final RegistryObject<Item> CITRINE = ITEMS.register("citrine",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
 
-    public static final RegistryObject<Item> RAW_CITRINE = ITEMS.register("raw_citrine",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
-
-
     public static final RegistryObject<Item> CITRINE_HELMET = ITEMS.register("citrine_helmet",
             () -> new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
