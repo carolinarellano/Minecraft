@@ -1,7 +1,7 @@
 package net.rcy.modbuilder.management;
 
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorMaterials;
 import net.minecraftforge.client.event.sound.SoundEvent;
 
 import java.io.BufferedReader;
@@ -19,7 +19,7 @@ public class Formatter {
      * @return A string with the structure needed to be functional
      */
 
-    public static void formatArmorItem(String name, ArmorMaterial material, EquipmentSlot slot, int line) throws IOException {
+    public static void formatArmorItem(String name, ArmorMaterials material, EquipmentSlot slot, int line) throws IOException {
         String textToPaste = "\tpublic static final RegistryObject<Item> " + name.toUpperCase() + "_" + slot.toString().toUpperCase() + " = ITEMS.register(\"" + name.toLowerCase() + "_" + slot.toString().toLowerCase() + "\",\n"
                 + "\t\t() -> new ArmorItem(ModArmorMaterials." + material.toString().toUpperCase() + ", EquipmentSlot." + slot + ",\n"
                 + "\t\t\t\tnew Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));\n";
@@ -71,7 +71,7 @@ public class Formatter {
         sb.append(knockbackResistance).append("F, ");
         sb.append("() -> { return Ingredient.of(Items.").append(name.toUpperCase()).append("_INGOT); })");
 
-        FileWriter writer = new FileWriter("net/rcy/modbuilder/items/ModItems.java");
+        FileWriter writer = new FileWriter("net/rcy/modbuilder/items/ModItems.txt");
         writer.write(sb.toString());
         writer.close();
 

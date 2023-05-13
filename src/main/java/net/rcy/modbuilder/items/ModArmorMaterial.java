@@ -32,8 +32,16 @@ public enum ModArmorMaterial implements ArmorMaterial {
     }),
     NETHERITE("netherite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
         return Ingredient.of(Items.NETHERITE_INGOT);
-    })
-
+    }),
+    PURE_GOLD("pure_gold", 30, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_GOLD, 0.1F, 0.1F, () -> {
+        return Ingredient.of(Items.GOLD_INGOT);
+    }),
+    REINFORCED_DIAMOND("reinforced_diamond", 40, new int[]{3, 6, 8, 3}, 15, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0F, 0.1F, () -> {
+                return Ingredient.of(Items.DIAMOND);
+    }),
+    HOLY_EMERALD("holy_emerald", 50, new int[]{3, 6, 8, 3}, 20, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.5F, () -> {
+        return Ingredient.of(Items.EMERALD);
+    }),
     ;
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};

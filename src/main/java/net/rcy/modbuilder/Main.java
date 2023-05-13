@@ -1,5 +1,6 @@
 package net.rcy.modbuilder;
 
+import net.minecraft.world.item.Item;
 import net.rcy.modbuilder.management.Formatter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,10 +13,7 @@ public class Main {
     //Here we create the new armors and weapons using the materials created
     //Saving all the classes and characteristics in java nd json files
     public static void main(String[] args) throws IOException {
-        //Here we create the new materials with the formatters
-        formatArmorItem("goldie", LEATHER, LEGS, 17);
-
-
+        //The developer has to introduce the data of it material
     }
 
 }

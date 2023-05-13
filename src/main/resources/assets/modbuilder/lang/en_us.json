@@ -1,0 +1,8 @@
+{
+  "itemGroup.modbuilder": "Tutorial Mod",
+
+  "item.modbuilder.dowsing_rod.no_valuables": "No Valuables Found!",
+  "tooltip.modbuilder.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
+  "tooltip.modbuilder.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information!",
+  "tooltip.modbuilder.block.speedy_block": "I am speed!"
+}
