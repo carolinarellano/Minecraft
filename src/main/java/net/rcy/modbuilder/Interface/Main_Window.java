@@ -1,7 +1,5 @@
 package net.rcy.modbuilder.Interface;
 
-import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatAtomOneDarkContrastIJTheme;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -25,7 +23,7 @@ public class Main_Window extends JFrame {
     private JButton testingBtn = new JButton("Testing");
 
 
-    public Main() {
+    public Main_Window() {
         super("MineCreator");
         setSize(800, 600);
         setLocationRelativeTo(null);
@@ -90,7 +88,7 @@ public class Main_Window extends JFrame {
             armor_Interface.setVisible(true);
         });
         weaponBtn.addActionListener(e -> {
-            Weapon_Interface weapon_Interface = new Weapon_Interface();
+            Weapon_interface weapon_Interface = new Weapon_interface();
             weapon_Interface.setVisible(true);
         });
         c.add(weaponBtn);
@@ -101,7 +99,7 @@ public class Main_Window extends JFrame {
     public static void main(String[] args) throws Exception {
         UIManager.setLookAndFeel("com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatAtomOneDarkIJTheme");
         JFrame.setDefaultLookAndFeelDecorated(true);
-        new Main();
+        new Main_Window();
     }
 
 }

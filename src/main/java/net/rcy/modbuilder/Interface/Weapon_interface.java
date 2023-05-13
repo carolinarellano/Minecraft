@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import com.formdev.flatlaf.FlatLightLaf;
 
+
 public class Weapon_interface extends JFrame {
     public static final Color WINDOW_COLOR = new Color(28, 28, 28);
     JButton backButton = new JButton("\u2190");
