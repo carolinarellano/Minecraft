@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "modbuilder:block/citrine_block" }
+  }
+}
