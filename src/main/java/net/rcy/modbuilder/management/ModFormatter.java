@@ -14,15 +14,6 @@ import java.util.List;
 import static net.rcy.modbuilder.item.ModArmorMaterials.GOLD;
 
 public class ModFormatter {
-    /**
-     * Gets the new ArmorItem created and creates a string that will be written into ModItems
-     *
-     * @param name the name of the material
-     * @param material the material taken from ArmorMaterial enum
-     * @param slot then type of the armor slot FEET, HAND, CHEST, ...
-     *
-     */
-
     public static String formatModItem(String name, ArmorMaterials material, EquipmentSlot slot) {
         String textToPaste = "\tpublic static final RegistryObject<Item> " + name.toUpperCase() + "_" + slot.toString().toUpperCase() + " = ITEMS.register(\"" + name.toLowerCase() + "_" + slot.toString().toLowerCase() + "\",\n"
                 + "\t\t() -> new ArmorItem(ModArmorMaterials." + material.toString().toUpperCase() + ", EquipmentSlot." + slot + ",\n"
@@ -62,9 +53,8 @@ public class ModFormatter {
         writer.close();
     }
 
-    public static void main(String[] args) {
-        Armor a = new Armor(GOLD);
-        System.out.println(a);
+    public static void main(String[] args) throws FileNotFoundException {
+        Armor.register(GOLD);
     }
 
 
