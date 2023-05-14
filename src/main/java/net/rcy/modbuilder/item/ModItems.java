@@ -11,6 +11,22 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ModBuilder.MOD_ID);
 
+	public static final RegistryObject<Item> CHAINMAIL_HELMET = ITEMS.register("chainmail_helmet",
+		() -> new ArmorItem(ModArmorMaterials.CHAIN, EquipmentSlot.HEAD,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> CHAINMAIL_CHESTPLATE = ITEMS.register("chainmail_chestplate",
+		() -> new ArmorItem(ModArmorMaterials.CHAIN, EquipmentSlot.CHEST,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> CHAINMAIL_LEGGING = ITEMS.register("chainmail_leggings",
+		() -> new ArmorItem(ModArmorMaterials.CHAIN, EquipmentSlot.LEGS,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> CHAINMAIL_BOOTS = ITEMS.register("chainmail_boots",
+		() -> new ArmorItem(ModArmorMaterials.CHAIN, EquipmentSlot.FEET,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
 	public static final RegistryObject<Item> GOLD_HELMET = ITEMS.register("golden_helmet",
 		() -> new ArmorItem(ModArmorMaterials.GOLD, EquipmentSlot.HEAD,
 				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
@@ -41,22 +57,6 @@ public class ModItems {
 
 	public static final RegistryObject<Item> IRON_BOOTS = ITEMS.register("iron_boots",
 		() -> new ArmorItem(ModArmorMaterials.IRON, EquipmentSlot.FEET,
-				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
-
-	public static final RegistryObject<Item> CHAINMAIL_HELMET = ITEMS.register("chainmail_helmet",
-		() -> new ArmorItem(ModArmorMaterials.CHAIN, EquipmentSlot.HEAD,
-				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
-
-	public static final RegistryObject<Item> CHAINMAIL_CHESTPLATE = ITEMS.register("chainmail_chestplate",
-		() -> new ArmorItem(ModArmorMaterials.CHAIN, EquipmentSlot.CHEST,
-				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
-
-	public static final RegistryObject<Item> CHAINMAIL_LEGGING = ITEMS.register("chainmail_leggings",
-		() -> new ArmorItem(ModArmorMaterials.CHAIN, EquipmentSlot.LEGS,
-				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
-
-	public static final RegistryObject<Item> CHAINMAIL_BOOTS = ITEMS.register("chainmail_boots",
-		() -> new ArmorItem(ModArmorMaterials.CHAIN, EquipmentSlot.FEET,
 				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
 
 	public static final RegistryObject<Item> DIAMOND_HELMET = ITEMS.register("diamond_helmet",
