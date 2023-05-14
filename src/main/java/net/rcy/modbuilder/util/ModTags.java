@@ -10,7 +10,6 @@ import net.minecraftforge.common.Tags;
 
 public class ModTags {
     public static class Items {
-        public static final Tags.IOptionalNamedTag<Item> CITRINE_GEMS = forgeTag("gems/citrine");
 
         private static Tags.IOptionalNamedTag<Item> tag(String name) {
             return ItemTags.createOptional(new ResourceLocation(ModBuilder.MOD_ID, name));

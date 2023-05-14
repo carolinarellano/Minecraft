@@ -8,7 +8,6 @@ import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.rcy.modbuilder.management.ModFormatter;
 
 import java.io.FileNotFoundException;
 import java.util.function.Supplier;
@@ -16,34 +15,62 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
     CITRINE("citrine", 28, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
             2.0F, 0.0F, () -> Ingredient.of(ModItems.CITRINE.get())),
+    CITRINE1("citrine", 56, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
+            2.1F, 0.0F, () -> Ingredient.of(ModItems.CITRINE.get())),
+    CITRINE2("citrine", 84, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
+            2.2F, 0.0F, () -> Ingredient.of(ModItems.CITRINE.get())),
     LEATHER("leather", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
+        return Ingredient.of(Items.LEATHER);
+    }),
+    LEATHER1("leather", 10, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.1F, 0.1F, () -> {
+        return Ingredient.of(Items.LEATHER);
+    }),
+    LEATHER2("leather", 15, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.1F, 0.1F, () -> {
         return Ingredient.of(Items.LEATHER);
     }),
     CHAIN("chainmail", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
         return Ingredient.of(Items.IRON_INGOT);
     }),
+    CHAIN1("chainmail", 30, new int[]{1, 4, 5, 2}, 12, SoundEvents.ARMOR_EQUIP_CHAIN, 0.1F, 0.1F, () -> {
+        return Ingredient.of(Items.IRON_INGOT);
+    }),
+    CHAIN2("chainmail", 45, new int[]{1, 4, 5, 2}, 12, SoundEvents.ARMOR_EQUIP_CHAIN, 0.2F, 0.2F, () -> {
+        return Ingredient.of(Items.IRON_INGOT);
+    }),
     IRON("iron", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+        return Ingredient.of(Items.IRON_INGOT);
+    }),
+    IRON1("iron", 30, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.1F, 0.1F, () -> {
+        return Ingredient.of(Items.IRON_INGOT);
+    }),
+    IRON2("iron", 45, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.2F, 0.2F, () -> {
         return Ingredient.of(Items.IRON_INGOT);
     }),
     GOLD("gold", 7, new int[]{1, 3, 5, 2}, 25, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
         return Ingredient.of(Items.GOLD_INGOT);
     }),
+    GOLD1("gold", 14, new int[]{1, 3, 5, 2}, 25, SoundEvents.ARMOR_EQUIP_GOLD, 0.1F, 0.1F, () -> {
+        return Ingredient.of(Items.GOLD_INGOT);
+    }),
+    GOLD2("gold", 21, new int[]{1, 3, 5, 2}, 25, SoundEvents.ARMOR_EQUIP_GOLD, 0.2F, 0.2F, () -> {
+        return Ingredient.of(Items.GOLD_INGOT);
+    }),
     DIAMOND("diamond", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.of(Items.DIAMOND);
     }),
-    TURTLE("turtle", 25, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_TURTLE, 0.0F, 0.0F, () -> {
-        return Ingredient.of(Items.SCUTE);
+    DIAMOND1("diamond", 66, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.1F, 0.1F, () -> {
+        return Ingredient.of(Items.DIAMOND);
     }),
-    NETHERITE("netherite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
-        return Ingredient.of(Items.NETHERITE_INGOT);
-    }),
-    PURE_GOLD("pure_gold", 30, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_GOLD, 0.1F, 0.1F, () -> {
-        return Ingredient.of(Items.GOLD_INGOT);
-    }),
-    REINFORCED_DIAMOND("reinforced_diamond", 40, new int[]{3, 6, 8, 3}, 15, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0F, 0.1F, () -> {
+    DIAMOND2("diamond", 99, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.2F, 0.2F, () -> {
         return Ingredient.of(Items.DIAMOND);
     }),
     HOLY_EMERALD("holy_emerald", 50, new int[]{3, 6, 8, 3}, 20, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.5F, () -> {
+        return Ingredient.of(Items.EMERALD);
+    }),
+    HOLY_EMERALD1("holy_emerald", 100, new int[]{3, 6, 8, 3}, 20, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.1F, 0.6F, () -> {
+        return Ingredient.of(Items.EMERALD);
+    }),
+    HOLY_EMERALD2("holy_emerald", 150, new int[]{3, 6, 8, 3}, 20, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.2F, 0.7F, () -> {
         return Ingredient.of(Items.EMERALD);
     });
 
