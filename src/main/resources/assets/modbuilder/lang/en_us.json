@@ -16,29 +16,41 @@
   "item.modbuilder.citrine_leggings": "Citrine Leggings",
   "item.modbuilder.citrine_boots": "Citrine Boots",
 
-  "block.modbuilder.citrine_block": "Citrine Block",
-  "block.modbuilder.raw_citrine_block": "Raw Citrine Block",
-  "block.modbuilder.citrine_ore": "Citrine Ore",
-  "block.modbuilder.deepslate_citrine_ore": "Deepslate Citrine Ore",
-  "block.modbuilder.netherrack_citrine_ore": "Netherrack Citrine Ore",
-  "block.modbuilder.endstone_citrine_ore": "Endstone Citrine Ore",
-  "block.modbuilder.speedy_block": "Speedy Block",
-
-  "block.modbuilder.citrine_slab": "Citrine Slab",
-  "block.modbuilder.citrine_stairs": "Citrine Stairs",
-  "block.modbuilder.citrine_fence": "Citrine Fence",
-  "block.modbuilder.citrine_wall": "Citrine Wall",
-  "block.modbuilder.citrine_fence_gate": "Citrine Fence Gate",
-
-  "block.modbuilder.citrine_button": "Citrine Button",
-  "block.modbuilder.citrine_pressure_plate": "Citrine Pressure Plate",
-  "block.modbuilder.ebony_door": "Ebony Door",
-  "block.modbuilder.ebony_trapdoor": "Ebony Trapdoor",
-
-  "itemGroup.tutorialtab": "Tutorial Mod",
-
-  "item.modbuilder.dowsing_rod.no_valuables": "No Valuables Found!",
-  "tooltip.modbuilder.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
-  "tooltip.modbuilder.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information!",
-  "tooltip.modbuilder.block.speedy_block": "I am speed!"
+  "itemGroup.tutorialtab": "Tutorial Mod"
+,
+  "item.modbuilder.diamond": "Diamond",
+  "item.modbuilder.diamond_helmet": "Diamond Helmet",
+  "item.modbuilder.diamond_chestplate": "Diamond Chestplate",
+  "item.modbuilder.diamond_leggings": "Diamond Leggings",
+  "item.modbuilder.diamond_boots": "Diamond Boots"
+,
+  "item.modbuilder.gold": "Gold",
+  "item.modbuilder.gold_helmet": "Gold Helmet",
+  "item.modbuilder.gold_chestplate": "Gold Chestplate",
+  "item.modbuilder.gold_leggings": "Gold Leggings",
+  "item.modbuilder.gold_boots": "Gold Boots"
+,
+  "item.modbuilder.leather": "Leather",
+  "item.modbuilder.leather_helmet": "Leather Helmet",
+  "item.modbuilder.leather_chestplate": "Leather Chestplate",
+  "item.modbuilder.leather_leggings": "Leather Leggings",
+  "item.modbuilder.leather_boots": "Leather Boots"
+,
+  "item.modbuilder.chain": "Chain",
+  "item.modbuilder.chain_helmet": "Chain Helmet",
+  "item.modbuilder.chain_chestplate": "Chain Chestplate",
+  "item.modbuilder.chain_leggings": "Chain Leggings",
+  "item.modbuilder.chain_boots": "Chain Boots"
+,
+  "item.modbuilder.iron": "Iron",
+  "item.modbuilder.iron_helmet": "Iron Helmet",
+  "item.modbuilder.iron_chestplate": "Iron Chestplate",
+  "item.modbuilder.iron_leggings": "Iron Leggings",
+  "item.modbuilder.iron_boots": "Iron Boots"
+,
+  "item.modbuilder.gold1": "Gold1",
+  "item.modbuilder.gold1_helmet": "Gold1 Helmet",
+  "item.modbuilder.gold1_chestplate": "Gold1 Chestplate",
+  "item.modbuilder.gold1_leggings": "Gold1 Leggings",
+  "item.modbuilder.gold1_boots": "Gold1 Boots"
 }

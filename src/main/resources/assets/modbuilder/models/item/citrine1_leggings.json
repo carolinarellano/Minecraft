@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "modbuilder:item/diamond_chestplate"
+    "layer0": "modbuilder:item/citrine_leggings"
   }
 }
