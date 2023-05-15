@@ -19,6 +19,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
             2.1F, 0.0F, () -> Ingredient.of(ModItems.CITRINE.get())),
     CITRINE2("citrine", 84, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
             2.2F, 0.0F, () -> Ingredient.of(ModItems.CITRINE.get())),
+
     LEATHER("leather", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
         return Ingredient.of(Items.LEATHER);
     }),
