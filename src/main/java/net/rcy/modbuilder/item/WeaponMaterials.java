@@ -24,4 +24,10 @@ public class WeaponMaterials {
     public static final ForgeTier DIAMOND = new ForgeTier(4, 2000, 1.5f,
             2f, 22, BlockTags.NEEDS_IRON_TOOL,
             () -> Ingredient.of(ModItems.CITRINE.get()));
+
+    public static final ForgeTier NETHERITE = new ForgeTier(5, 2500, 1.5f,
+            2f, 22, BlockTags.NEEDS_DIAMOND_TOOL,
+            () -> Ingredient.of(ModItems.CITRINE.get()));
+
+
 }
