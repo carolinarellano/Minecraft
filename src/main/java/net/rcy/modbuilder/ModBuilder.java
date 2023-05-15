@@ -14,6 +14,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
+
+/**
+ * The main mod class for ModBuilder.
+ * It initializes and handles various mod functionalities.
+ */
 @Mod(ModBuilder.MOD_ID)
 public class ModBuilder {
     public static final String MOD_ID = "modbuilder";
@@ -21,7 +26,10 @@ public class ModBuilder {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    // Add a comment
+    /**
+     * Constructs a ModBuilder object and initializes mod functionalities.
+     */
+
     public ModBuilder() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -34,12 +42,24 @@ public class ModBuilder {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void clientSetup(final FMLClientSetupEvent event) {
+    /**
+     * Handles the client setup event.
+     *
+     * @param event The FMLClientSetupEvent instance.
+     */
 
+    private void clientSetup(final FMLClientSetupEvent event) {
+        // Add client-specific setup code here
     }
 
+    /**
+     * Handles the common setup event.
+     *
+     * @param event The FMLCommonSetupEvent instance.
+     */
+
     private void setup(final FMLCommonSetupEvent event) {
-        // some preinit code
+        // Some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
