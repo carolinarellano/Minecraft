@@ -11,22 +11,46 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ModBuilder.MOD_ID);
 
-	public static final RegistryObject<Item> STONE_SHOVEL = ITEMS.register("stone_shovel",
-		() -> new ShovelItem(WeaponMaterials.STONE, 2, 1.3f , 
+	public static final RegistryObject<Item> DIAMOND1_HELMET = ITEMS.register("diamond1_helmet",
+		() -> new ArmorItem(ModArmorMaterials.DIAMOND1, EquipmentSlot.HEAD,
 				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
 
-	public static final RegistryObject<Item> DIAMOND_AXE = ITEMS.register("diamond_axe",
-		() -> new AxeItem(WeaponMaterials.DIAMOND, 8, 7.0f , 
+	public static final RegistryObject<Item> DIAMOND1_CHESTPLATE = ITEMS.register("diamond1_chestplate",
+		() -> new ArmorItem(ModArmorMaterials.DIAMOND1, EquipmentSlot.CHEST,
 				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
 
-	public static final RegistryObject<Item> IRON_PICKAXE = ITEMS.register("iron_pickaxe",
-		() -> new PickaxeItem(WeaponMaterials.IRON, 3, 2.0f , 
+	public static final RegistryObject<Item> DIAMOND1_LEGGING = ITEMS.register("diamond1_leggings",
+		() -> new ArmorItem(ModArmorMaterials.DIAMOND1, EquipmentSlot.LEGS,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> DIAMOND1_BOOTS = ITEMS.register("diamond1_boots",
+		() -> new ArmorItem(ModArmorMaterials.DIAMOND1, EquipmentSlot.FEET,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> CITRINE_PICKAXE = ITEMS.register("citrine_pickaxe",
+		() -> new PickaxeItem(WeaponMaterials.CITRINE, 10, 1.2f , 
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> IRON2_HELMET = ITEMS.register("iron_helmet",
+		() -> new ArmorItem(ModArmorMaterials.IRON2, EquipmentSlot.HEAD,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> IRON2_CHESTPLATE = ITEMS.register("iron_chestplate",
+		() -> new ArmorItem(ModArmorMaterials.IRON2, EquipmentSlot.CHEST,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> IRON2_LEGGING = ITEMS.register("iron_leggings",
+		() -> new ArmorItem(ModArmorMaterials.IRON2, EquipmentSlot.LEGS,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> IRON2_BOOTS = ITEMS.register("iron_boots",
+		() -> new ArmorItem(ModArmorMaterials.IRON2, EquipmentSlot.FEET,
 				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
 
 	public static final RegistryObject<Item> CITRINE_SWORD = ITEMS.register("citrine_sword",
-		() -> new SwordItem(WeaponMaterials.CITRINE, 6, 3.2f , 
+		() -> new SwordItem(WeaponMaterials.CITRINE, 1, 1.0f , 
 				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
-
+	
 	public static final RegistryObject<Item> LEATHER_HELMET = ITEMS.register("leather_helmet",
 		() -> new ArmorItem(ModArmorMaterials.LEATHER, EquipmentSlot.HEAD,
 				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
@@ -63,7 +87,6 @@ public class ModItems {
 
 	public static final RegistryObject<Item> HOLY_EMERALD = ITEMS.register("emerald",
 			() -> new Item(new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
-
 
 
     public static void register(IEventBus eventBus) {
