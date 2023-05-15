@@ -11,6 +11,38 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ModBuilder.MOD_ID);
 
+	public static final RegistryObject<Item> STONE_SHOVEL = ITEMS.register("stone_shovel",
+		() -> new ShovelItem(WeaponMaterials.STONE, 2, 1.3f , 
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> DIAMOND_AXE = ITEMS.register("diamond_axe",
+		() -> new AxeItem(WeaponMaterials.DIAMOND, 8, 7.0f , 
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> IRON_PICKAXE = ITEMS.register("iron_pickaxe",
+		() -> new PickaxeItem(WeaponMaterials.IRON, 3, 2.0f , 
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> CITRINE_SWORD = ITEMS.register("citrine_sword",
+		() -> new SwordItem(WeaponMaterials.CITRINE, 6, 3.2f , 
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> LEATHER_HELMET = ITEMS.register("leather_helmet",
+		() -> new ArmorItem(ModArmorMaterials.LEATHER, EquipmentSlot.HEAD,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> LEATHER_CHESTPLATE = ITEMS.register("leather_chestplate",
+		() -> new ArmorItem(ModArmorMaterials.LEATHER, EquipmentSlot.CHEST,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> LEATHER_LEGGING = ITEMS.register("leather_leggings",
+		() -> new ArmorItem(ModArmorMaterials.LEATHER, EquipmentSlot.LEGS,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
+	public static final RegistryObject<Item> LEATHER_BOOTS = ITEMS.register("leather_boots",
+		() -> new ArmorItem(ModArmorMaterials.LEATHER, EquipmentSlot.FEET,
+				new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
+
 	public static final RegistryObject<Item> CITRINE = ITEMS.register("citrine",
 			() -> new Item(new Item.Properties().tab(ModCreativeModeTab.MODBUILDER_TAB)));
 
