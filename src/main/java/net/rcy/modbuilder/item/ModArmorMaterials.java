@@ -12,7 +12,16 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.io.FileNotFoundException;
 import java.util.function.Supplier;
 
+/**
+ * Enum class representing different armor materials used in the mod.
+ */
+
 public enum ModArmorMaterials implements ArmorMaterial {
+
+    // Add other armor materials here...
+
+    // Constructor and other enum values...
+
     CITRINE("citrine", 28, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
             2.0F, 0.0F, () -> Ingredient.of(ModItems.CITRINE.get())),
     CITRINE1("citrine", 56, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
@@ -96,38 +105,98 @@ public enum ModArmorMaterials implements ArmorMaterial {
         this.toughness = p_40479_;
         this.knockbackResistance = p_40480_;
         this.repairIngredient = new LazyLoadedValue<>(p_40481_);
+
+        // Initialize the armor material properties
     }
+
+    /**
+     * Returns the durability of the armor material for the given equipment slot.
+     *
+     * @param pSlot The equipment slot.
+     * @return The durability for the equipment slot.
+     */
 
     public int getDurabilityForSlot(EquipmentSlot pSlot) {
         return HEALTH_PER_SLOT[pSlot.getIndex()] * this.durabilityMultiplier;
+        // Implement the logic to calculate the durability for the given slot
     }
+
+    /**
+     * Returns the defense value of the armor material for the given equipment slot.
+     *
+     * @param pSlot The equipment slot.
+     * @return The defense value for the equipment slot.
+     */
 
     public int getDefenseForSlot(EquipmentSlot pSlot) {
         return this.slotProtections[pSlot.getIndex()];
+        // Implement the logic to calculate the defense value for the given slot
     }
+
+    /**
+     * Returns the enchantment value of the armor material.
+     *
+     * @return The enchantment value.
+     */
 
     public int getEnchantmentValue() {
         return this.enchantmentValue;
+        // Return the enchantment value
     }
+
+    /**
+     * Returns the sound event played when equipping the armor material.
+     *
+     * @return The equip sound event.
+     */
 
     public SoundEvent getEquipSound() {
         return this.sound;
+        // Return the equip sound event
     }
+
+    /**
+     * Returns the repair ingredient for the armor material.
+     *
+     * @return The repair ingredient.
+     */
 
     public Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
+        // Return the repair ingredient
     }
+
+    /**
+     * Returns the name of the armor material.
+     *
+     * @return The name of the armor material.
+     */
 
     public String getName() {
         return ModBuilder.MOD_ID + ":" + this.name;
+        // Return the name of the armor material
     }
+
+    /**
+     * Returns the toughness value of the armor material.
+     *
+     * @return The toughness value.
+     */
 
     public float getToughness() {
         return this.toughness;
+        // Return the toughness value
     }
+
+    /**
+     * Returns the knockback resistance value of the armor material.
+     *
+     * @return The knockback resistance value.
+     */
 
     public float getKnockbackResistance() {
         return this.knockbackResistance;
+        // Return the knockback resistance value
     }
 
 }
