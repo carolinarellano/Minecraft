@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"net.rcy.modbuilder.item","l":"ModArmorMaterials"},{"p":"net.rcy.modbuilder","l":"ModBuilder"},{"p":"net.rcy.modbuilder.item","l":"ModCreativeModeTab"},{"p":"net.rcy.modbuilder.item","l":"ModItems"},{"p":"net.rcy.modbuilder.item","l":"WeaponMaterials"}];updateSearchResults();
