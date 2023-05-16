@@ -3,15 +3,14 @@ package net.rcy.modbuilder.item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
-<<<<<<< HEAD
+
 /**
  * The ModCreativeModeTab class defines a custom creative mode tab for the mod.
  * This tab groups the mod's items together in the creative inventory.
  */
-=======
+
 import java.util.ArrayList;
 import java.util.List;
->>>>>>> da6e7429bbc5683c0f987f31841d1573e369afc9
 
 public class ModCreativeModeTab {
 
